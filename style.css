@@ -1,30 +1,9 @@
-body {
-  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-  margin: 0;
-  background: linear-gradient(to bottom, #ffffff, #f7f7f7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: #696969;
-  overflow: hidden;
-}
-
-.container {
-  text-align: center;
-  padding: 40px;
-  background: linear-gradient(135deg, #ffffffee, #ebe9e9f9);
-  border-radius: 30px;
-  box-shadow: 0 15px 40px rgba(56, 49, 16, 0.511);
-  max-width: 95vw;
-  max-height: 95vh;
-  overflow: hidden;
-}
-
 .tuner-area {
   position: relative;
-  width: 550px;
+  width: 90vw;
+  max-width: 550px;
   margin: 0 auto;
+  aspect-ratio: 2 / 3; /* 画像比率に合わせて */
 }
 
 .guitar-img {
@@ -34,9 +13,11 @@ body {
   border-radius: 16px;
 }
 
+/* 共通ボタンスタイル */
 .tune-button {
   position: absolute;
-  padding: 12px;
+  width: 48px;
+  height: 48px;
   font-size: 16px;
   background: linear-gradient(135deg, #f3f3f3, #f3f3f3);
   color: #c7b729e6;
@@ -45,49 +26,22 @@ body {
   cursor: pointer;
   font-weight: 700;
   box-shadow: 0 4px 15px rgba(88, 80, 26, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-
-/* ボタンの個別位置（画像上のペグ位置に合わせる） */
-.btn-e { top: 8%; left: 6%; }
-.btn-a { top: 18%; left: 10%; }
-.btn-d { top: 28%; left: 14%; }
-.btn-g { top: 38%; left: 18%; }
-.btn-b { top: 48%; left: 22%; }
-.btn-e2 { top: 58%; left: 26%; }
 
 .tune-button:hover {
   transform: scale(1.08);
   box-shadow: 0 6px 25px rgb(255, 210, 49);
 }
 
-/* レスポンシブ調整：タブレット以下では中央揃え・サイズ縮小 */
-@media (max-width: 768px) {
-  .tuner-area {
-    width: 80vw;
-  }
+/* 各ボタンの位置（画像に合わせて調整） */
+.btn-e  { top: 14%; left: 4%; }
+.btn-a  { top: 34%; left: 4%; }
+.btn-d  { top: 56%; left: 4%; }
 
-  .tune-button {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .btn-e { top: 10%; left: 10%; }
-  .btn-a { top: 20%; left: 15%; }
-  .btn-d { top: 30%; left: 20%; }
-  .btn-g { top: 40%; left: 25%; }
-  .btn-b { top: 50%; left: 30%; }
-  .btn-e2 { top: 60%; left: 35%; }
-}
-
-@media (max-width: 480px) {
-  .tuner-area {
-    width: 95vw;
-  }
-
-  .tune-button {
-    font-size: 12px;
-    padding: 8px;
-  }
-}
-
+.btn-g  { top: 20%; right: 4%; }
+.btn-b  { top: 42%; right: 4%; }
+.btn-e2 { top: 63%; right: 4%; }
