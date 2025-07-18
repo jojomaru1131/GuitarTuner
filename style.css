@@ -75,6 +75,8 @@ body {
     width: 100%;
     max-width: 450px;
     margin: 0 auto;
+    aspect-ratio: 550/400;
+    object-fit: contain;
   }
   
   .tune-button {
@@ -108,6 +110,8 @@ body {
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
+    aspect-ratio: 550/400;
+    object-fit: contain;
   }
   
   .tune-button {
@@ -131,6 +135,8 @@ body {
     width: 100%;
     max-width: 280px;
     margin: 0 auto;
+    aspect-ratio: 550/400;
+    object-fit: contain;
   }
   
   .tune-button {
