@@ -1,24 +1,45 @@
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  color: #696969;
+  padding-top: 60px;
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #fffffff6, #ebe9e9fe);
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(56, 49, 16, 0.511);
+  max-width: 1000px;
+  width: 90vw;
+  margin: 0 auto;
+}
+
 .tuner-area {
   position: relative;
-  width: 90vw;
-  max-width: 550px;
-  margin: 0 auto;
-  aspect-ratio: 2 / 3; /* 画像比率に合わせて */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .guitar-img {
-  width: 100%;
+  width: 550px;
   height: auto;
   display: block;
   border-radius: 16px;
 }
 
-/* 共通ボタンスタイル */
 .tune-button {
   position: absolute;
-  width: 48px;
-  height: 48px;
-  font-size: 16px;
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
   background: linear-gradient(135deg, #f3f3f3, #f3f3f3);
   color: #c7b729e6;
   border: 1px solid #d4a842;
@@ -26,22 +47,38 @@
   cursor: pointer;
   font-weight: 700;
   box-shadow: 0 4px 15px rgba(88, 80, 26, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
+/* ペグに重ねる調整：画像に合わせて調整（top/leftは相対座標） */
+.tune-button:nth-child(2) { top: 55px; left: 20px; }    /* 1弦 */
+.tune-button:nth-child(3) { top: 95px; left: 40px; }    /* 2弦 */
+.tune-button:nth-child(4) { top: 135px; left: 60px; }   /* 3弦 */
+.tune-button:nth-child(5) { top: 180px; left: 80px; }   /* 4弦 */
+.tune-button:nth-child(6) { top: 225px; left: 100px; }  /* 5弦 */
+.tune-button:nth-child(7) { top: 265px; left: 120px; }  /* 6弦 */
 
 .tune-button:hover {
   transform: scale(1.08);
   box-shadow: 0 6px 25px rgb(255, 210, 49);
 }
 
-/* 各ボタンの位置（画像に合わせて調整） */
-.btn-e  { top: 14%; left: 4%; }
-.btn-a  { top: 34%; left: 4%; }
-.btn-d  { top: 56%; left: 4%; }
+/* スマホ・タブレット対応 */
+@media (max-width: 768px) {
+  .guitar-img {
+    width: 90vw;
+  }
 
-.btn-g  { top: 20%; right: 4%; }
-.btn-b  { top: 42%; right: 4%; }
-.btn-e2 { top: 63%; right: 4%; }
+  .tune-button {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .tune-button:nth-child(2) { top: 30px; left: 5px; }
+  .tune-button:nth-child(3) { top: 70px; left: 25px; }
+  .tune-button:nth-child(4) { top: 110px; left: 45px; }
+  .tune-button:nth-child(5) { top: 150px; left: 65px; }
+  .tune-button:nth-child(6) { top: 190px; left: 85px; }
+  .tune-button:nth-child(7) { top: 230px; left: 105px; }
+}
