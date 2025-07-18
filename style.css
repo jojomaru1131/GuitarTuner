@@ -4,28 +4,27 @@ body {
   background: linear-gradient(to bottom, #ffffff, #f7f7f7);
   display: flex;
   justify-content: center;
-  align-items: start;
-  min-height: 100vh;
+  align-items: center;
+  height: 100vh;
   color: #696969;
-  padding-top: 60px;
+  overflow: hidden;
+  margin-top: 150px;
 }
 
 .container {
   text-align: center;
   padding: 40px;
   background: linear-gradient(135deg, #fffffff6, #ebe9e9fe);
+  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 30px;
   box-shadow: 0 15px 40px rgba(56, 49, 16, 0.511);
-  max-width: 1000px;
-  width: 90vw;
-  margin: 0 auto;
+  max-width: 90vw;
 }
 
 .tuner-area {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 50px;
+  display: inline-block;
 }
 
 .guitar-img {
@@ -37,8 +36,7 @@ body {
 
 .tune-button {
   position: absolute;
-  width: 60px;
-  height: 60px;
+  padding: 14px 20px;
   font-size: 18px;
   background: linear-gradient(135deg, #f3f3f3, #f3f3f3);
   color: #c7b729e6;
@@ -50,35 +48,8 @@ body {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* ペグに重ねる調整：画像に合わせて調整（top/leftは相対座標） */
-.tune-button:nth-child(2) { top: 55px; left: 20px; }    /* 1弦 */
-.tune-button:nth-child(3) { top: 95px; left: 40px; }    /* 2弦 */
-.tune-button:nth-child(4) { top: 135px; left: 60px; }   /* 3弦 */
-.tune-button:nth-child(5) { top: 180px; left: 80px; }   /* 4弦 */
-.tune-button:nth-child(6) { top: 225px; left: 100px; }  /* 5弦 */
-.tune-button:nth-child(7) { top: 265px; left: 120px; }  /* 6弦 */
-
 .tune-button:hover {
   transform: scale(1.08);
   box-shadow: 0 6px 25px rgb(255, 210, 49);
 }
 
-/* スマホ・タブレット対応 */
-@media (max-width: 768px) {
-  .guitar-img {
-    width: 90vw;
-  }
-
-  .tune-button {
-    width: 40px;
-    height: 40px;
-    font-size: 14px;
-  }
-
-  .tune-button:nth-child(2) { top: 30px; left: 5px; }
-  .tune-button:nth-child(3) { top: 70px; left: 25px; }
-  .tune-button:nth-child(4) { top: 110px; left: 45px; }
-  .tune-button:nth-child(5) { top: 150px; left: 65px; }
-  .tune-button:nth-child(6) { top: 190px; left: 85px; }
-  .tune-button:nth-child(7) { top: 230px; left: 105px; }
-}
