@@ -69,6 +69,7 @@ body {
   .tuner-area {
     top: 30px;
     width: 100%;
+    transform: scale(0.82);
   }
   
   .guitar-img {
@@ -104,6 +105,7 @@ body {
   .tuner-area {
     top: 20px;
     width: 100%;
+    transform: scale(0.58);
   }
   
   .guitar-img {
@@ -129,6 +131,7 @@ body {
   
   .tuner-area {
     width: 100%;
+    transform: scale(0.51);
   }
   
   .guitar-img {
