@@ -1,0 +1,54 @@
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #696969;
+  overflow: hidden;
+  margin-top:150px;
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #fffffff6, #ebe9e9fe); background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(56, 49, 16, 0.511);
+  max-width: 90vw;
+}
+
+.tuner-area {
+  position: relative;
+  top:50px;
+  display: inline-block;
+}
+
+.guitar-img {
+  width: 550px;  /* サイズ拡大 */
+  height: auto;
+  display: block;
+  border-radius: 16px;
+
+}
+
+.tune-button {
+  position: absolute;
+  padding: 14px 20px;
+  font-size: 18px;
+  background: linear-gradient(135deg, #f3f3f3, #f3f3f3);
+  color: #c7b729e6;
+  border: 1px solid #d4a842;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(88, 80, 26, 0.5);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tune-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 25px rgb(255, 210, 49);
+}
