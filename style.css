@@ -19,8 +19,6 @@ body {
   border-radius: 30px;
   box-shadow: 0 15px 40px rgba(56, 49, 16, 0.511);
   max-width: 90vw;
-  width: 100%;
-  max-width: 900px;
 }
 
 .tuner-area {
