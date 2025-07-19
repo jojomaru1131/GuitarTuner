@@ -5,33 +5,36 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   color: #696969;
-  overflow: hidden;
-  margin-top:150px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .container {
   text-align: center;
   padding: 40px;
-  background: linear-gradient(135deg, #fffffff6, #ebe9e9fe); background-color: rgba(0, 0, 0, 0.9);
+  background: linear-gradient(135deg, #fffffff6, #ebe9e9fe);
   border-radius: 30px;
   box-shadow: 0 15px 40px rgba(56, 49, 16, 0.511);
   max-width: 90vw;
+  width: 100%;
+  max-width: 650px;
 }
 
 .tuner-area {
   position: relative;
-  top:50px;
   display: inline-block;
+  width: 100%;
+  max-width: 550px;
 }
 
 .guitar-img {
-  width: 550px;  /* サイズ拡大 */
+  width: 100%;
+  max-width: 550px;
   height: auto;
   display: block;
   border-radius: 16px;
-
 }
 
 .tune-button {
@@ -46,6 +49,11 @@ body {
   font-weight: 700;
   box-shadow: 0 4px 15px rgba(88, 80, 26, 0.5);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tune-button:hover {
@@ -53,4 +61,120 @@ body {
   box-shadow: 0 6px 25px rgb(255, 210, 49);
 }
 
+/* ペグの位置に合わせたボタンの配置（パーセンテージベース） */
+#btnE {
+  top: 38%;
+  left: 11%;
+}
 
+#btnA {
+  top: 26.5%;
+  left: 11%;
+}
+
+#btnD {
+  top: 15%;
+  left: 11%;
+}
+
+#btnG {
+  top: 15%;
+  right: 11%;
+}
+
+#btnB {
+  top: 26.5%;
+  right: 11%;
+}
+
+#btnHighE {
+  top: 38%;
+  right: 11%;
+}
+
+/* タブレット対応 */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 20px;
+  }
+  
+  .tune-button {
+    padding: 12px 16px;
+    font-size: 16px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+/* スマートフォン対応 */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  
+  .container {
+    padding: 20px 15px;
+    border-radius: 20px;
+  }
+  
+  .tune-button {
+    padding: 10px 10px;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    
+  }
+  
+  h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .guitar-img{
+    margin-top:55px ;
+  }
+  
+  /* スマホでのボタン位置微調整 */
+  #btnE {
+    left: 9%;
+  }
+  
+  #btnA {
+    left: 9%;
+  }
+  
+  #btnD {
+    left: 9%;
+  }
+  
+  #btnG {
+    right: 9%;
+  }
+  
+  #btnB {
+    right: 9%;
+  }
+  
+  #btnHighE {
+    right: 9%;
+  }
+}
+
+/* 小さなスマートフォン対応 */
+@media (max-width: 360px) {
+  .tune-button {
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  
+  h1 {
+    font-size: 18px;
+  }
+}
