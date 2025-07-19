@@ -8,13 +8,14 @@ body {
   height: 100vh;
   color: #696969;
   overflow: hidden;
-  margin-top:150px;
+  margin-top: 150px;
 }
 
 .container {
   text-align: center;
   padding: 40px;
-  background: linear-gradient(135deg, #fffffff6, #ebe9e9fe); background-color: rgba(0, 0, 0, 0.9);
+  background: linear-gradient(135deg, #fffffff6, #ebe9e9fe);
+  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 30px;
   box-shadow: 0 15px 40px rgba(56, 49, 16, 0.511);
   max-width: 90vw;
@@ -22,16 +23,18 @@ body {
 
 .tuner-area {
   position: relative;
-  top:50px;
+  top: 50px;
   display: inline-block;
+  width: 100%;
+  max-width: 550px;
 }
 
 .guitar-img {
-  width: 550px;  /* サイズ拡大 */
+  width: 100%;
+  max-width: 550px;
   height: auto;
   display: block;
   border-radius: 16px;
-
 }
 
 .tune-button {
@@ -52,4 +55,95 @@ body {
   transform: scale(1.08);
   box-shadow: 0 6px 25px rgb(255, 210, 49);
 }
+
+/* レスポンシブ対応 - タブレット */
+@media screen and (max-width: 768px) {
+  body {
+    margin-top: 100px;
+  }
+  
+  .container {
+    padding: 30px;
+    max-width: 95vw;
+  }
+  
+  .tuner-area {
+    top: 30px;
+    max-width: 450px;
+  }
+  
+  .tune-button {
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+  
+  /* ボタン位置をパーセンテージで調整 */
+  #btnE { top: 38.2% !important; left: 10.9% !important; }
+  #btnA { top: 26.4% !important; left: 10.9% !important; }
+  #btnD { top: 14.5% !important; left: 10.9% !important; }
+  #btnG { top: 14.5% !important; right: 10.9% !important; }
+  #btnB { top: 26.4% !important; right: 10.9% !important; }
+  #btnHighE { top: 38.2% !important; right: 10.9% !important; }
+}
+
+/* レスポンシブ対応 - スマートフォン */
+@media screen and (max-width: 480px) {
+  body {
+    margin-top: 50px;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    padding: 20px;
+    max-width: 98vw;
+    margin: 10px;
+  }
+  
+  .tuner-area {
+    top: 20px;
+    max-width: 350px;
+  }
+  
+  .tune-button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  
+  /* スマートフォン用ボタン位置調整 */
+  #btnE { top: 38.2% !important; left: 8.5% !important; }
+  #btnA { top: 26.4% !important; left: 8.5% !important; }
+  #btnD { top: 14.5% !important; left: 8.5% !important; }
+  #btnG { top: 14.5% !important; right: 8.5% !important; }
+  #btnB { top: 26.4% !important; right: 8.5% !important; }
+  #btnHighE { top: 38.2% !important; right: 8.5% !important; }
+}
+
+/* レスポンシブ対応 - 極小スマートフォン */
+@media screen and (max-width: 360px) {
+  body {
+    margin-top: 30px;
+  }
+  
+  .container {
+    padding: 15px;
+    border-radius: 20px;
+  }
+  
+  .tuner-area {
+    top: 15px;
+    max-width: 280px;
+  }
+  
+  .tune-button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  
+  /* 極小画面用ボタン位置調整 */
+  #btnE { top: 38.2% !important; left: 6% !important; }
+  #btnA { top: 26.4% !important; left: 6% !important; }
+  #btnD { top: 14.5% !important; left: 6% !important; }
+  #btnG { top: 14.5% !important; right: 6% !important; }
+  #btnB { top: 26.4% !important; right: 6% !important; }
+  #btnHighE { top: 38.2% !important; right: 6% !important; }
 
