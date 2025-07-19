@@ -102,7 +102,11 @@ body {
   
   .tuner-area {
     top: 20px;
-    max-width: 350px;
+    max-width: 380px;
+  }
+  
+  .guitar-img {
+    transform: scale(1.1) translateY(10px);
   }
   
   .tune-button {
@@ -111,12 +115,13 @@ body {
   }
   
   /* スマートフォン用ボタン位置調整 */
-  #btnE { top: 38.2% !important; left: 10% !important; }
-  #btnA { top: 26.4% !important; left: 10% !important; }
-  #btnD { top: 14.5% !important; left: 10% !important; }
-  #btnG { top: 14.5% !important; right: 10% !important; }
-  #btnB { top: 26.4% !important; right: 10% !important; }
-  #btnHighE { top: 38.2% !important; right: 10% !important; }
+  #btnE { top: 40% !important; left: 10% !important; }
+  #btnA { top: 28% !important; left: 10% !important; }
+  #btnD { top: 16% !important; left: 10% !important; }
+  #btnG { top: 16% !important; right: 10% !important; }
+  #btnB { top: 28% !important; right: 10% !important; }
+  #btnHighE { top: 40% !important; right: 10% !important; }
+}
 }
 
 /* レスポンシブ対応 - 極小スマートフォン */
