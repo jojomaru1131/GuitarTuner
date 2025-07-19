@@ -79,12 +79,12 @@ body {
   }
   
   /* ボタン位置をパーセンテージで調整 */
-  #btnE { top: 38.2% !important; left: 10.9% !important; }
-  #btnA { top: 26.4% !important; left: 10.9% !important; }
-  #btnD { top: 14.5% !important; left: 10.9% !important; }
-  #btnG { top: 14.5% !important; right: 10.9% !important; }
-  #btnB { top: 26.4% !important; right: 10.9% !important; }
-  #btnHighE { top: 38.2% !important; right: 10.9% !important; }
+  #btnE { top: 38.2% !important; left: 12% !important; }
+  #btnA { top: 26.4% !important; left: 12% !important; }
+  #btnD { top: 14.5% !important; left: 12% !important; }
+  #btnG { top: 14.5% !important; right: 12% !important; }
+  #btnB { top: 26.4% !important; right: 12% !important; }
+  #btnHighE { top: 38.2% !important; right: 12% !important; }
 }
 
 /* レスポンシブ対応 - スマートフォン */
@@ -111,12 +111,12 @@ body {
   }
   
   /* スマートフォン用ボタン位置調整 */
-  #btnE { top: 38.2% !important; left: 8.5% !important; }
-  #btnA { top: 26.4% !important; left: 8.5% !important; }
-  #btnD { top: 14.5% !important; left: 8.5% !important; }
-  #btnG { top: 14.5% !important; right: 8.5% !important; }
-  #btnB { top: 26.4% !important; right: 8.5% !important; }
-  #btnHighE { top: 38.2% !important; right: 8.5% !important; }
+  #btnE { top: 38.2% !important; left: 10% !important; }
+  #btnA { top: 26.4% !important; left: 10% !important; }
+  #btnD { top: 14.5% !important; left: 10% !important; }
+  #btnG { top: 14.5% !important; right: 10% !important; }
+  #btnB { top: 26.4% !important; right: 10% !important; }
+  #btnHighE { top: 38.2% !important; right: 10% !important; }
 }
 
 /* レスポンシブ対応 - 極小スマートフォン */
@@ -142,9 +142,9 @@ body {
   }
   
   /* 極小画面用ボタン位置調整 */
-  #btnE { top: 38.2% !important; left: 6% !important; }
-  #btnA { top: 26.4% !important; left: 6% !important; }
-  #btnD { top: 14.5% !important; left: 6% !important; }
-  #btnG { top: 14.5% !important; right: 6% !important; }
-  #btnB { top: 26.4% !important; right: 6% !important; }
-  #btnHighE { top: 38.2% !important; right: 6% !important; }
+  #btnE { top: 38.2% !important; left: 8% !important; }
+  #btnA { top: 26.4% !important; left: 8% !important; }
+  #btnD { top: 14.5% !important; left: 8% !important; }
+  #btnG { top: 14.5% !important; right: 8% !important; }
+  #btnB { top: 26.4% !important; right: 8% !important; }
+  #btnHighE { top: 38.2% !important; right: 8% !important; }
