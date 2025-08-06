@@ -9,6 +9,25 @@
 <body>
   <div class="container">
     <h1>Guitar Tuner</h1>
+    
+    <!-- マイク機能セクション -->
+    <div class="microphone-section">
+      <div class="mic-controls">
+        <button class="mic-button" id="startMic">マイク開始</button>
+        <button class="mic-button stop" id="stopMic" style="display: none;">マイク停止</button>
+      </div>
+      
+      <div class="note-display" id="noteDisplay">-</div>
+      <div class="frequency-display" id="frequencyDisplay">- Hz</div>
+      
+      <div class="tuning-meter">
+        <div class="meter-center-line"></div>
+        <div class="meter-needle" id="meterNeedle"></div>
+      </div>
+      
+      <div class="tuning-status no-signal" id="tuningStatus">音を検出してください</div>
+    </div>
+    
     <div class="tuner-area">
       <img src="imege/nec.png" alt="Guitar Head" class="guitar-img" />
       <button class="tune-button" id="btnE" style="top: 210px; left: 60px;">E</button>
